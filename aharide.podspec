@@ -38,7 +38,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 LICENSE
   }
   s.author                = { 'TienDV' => 'vantien2905@gmail.com' }
-  s.source                = { :http => 'https://github.com/vantien2905/aharide/raw/main/aharide.zip' }
+  s.source                = { :http => "https://github.com/vantien2905/aharide/raw/main/aharide.zip?access_token=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" }
+
   s.documentation_url     = 'https://flutter.dev/docs'
   s.platform              = :ios, '11.0'
 
@@ -54,7 +55,7 @@ LICENSE
 
   s.subspec 'FlutterPluginRegistrant' do |fs|
     fs.platform              = :ios, '11.0'
-    fs.vendored_frameworks   = 'FlutterPluginRegistrant.xcframework'
+    fs.vendored_libraries    = 'FlutterPluginRegistrant.xcframework'
   end
 
   s.subspec 'path_provider_ios' do |ps|
@@ -74,7 +75,7 @@ LICENSE
 
   s.subspec 'google_maps_flutter_ios' do |gos|
     gos.platform              = :ios, '11.0'
-    gos.vendored_frameworks   = 'google_maps_flutter_ios.xcframework'
+    gos.vendored_libraries   = 'google_maps_flutter_ios.xcframework'
   end
 
   s.subspec 'location' do |los|
@@ -84,7 +85,7 @@ LICENSE
 
   s.subspec 'permission_handler_apple' do |pes|
     pes.platform              = :ios, '11.0'
-    pes.vendored_frameworks   = 'permission_handler_apple.xcframework'
+    pes.vendored_libraries   = 'permission_handler_apple.xcframework'
   end
 
   s.subspec 'shared_preferences_ios' do |shs|
@@ -99,7 +100,7 @@ LICENSE
 
   s.subspec 'fluttertoast' do |fls|
     fls.platform              = :ios, '11.0'
-    fls.vendored_frameworks   = 'fluttertoast.xcframework'
+    fls.vendored_libraries   = 'fluttertoast.xcframework'
   end
 
 end
